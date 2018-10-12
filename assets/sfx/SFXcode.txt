@@ -1,0 +1,14 @@
+ex08 = Light
+ma01 = Fire
+ma02 = Freeze
+ma03 = Thunder
+ma04 = Heal
+ma05 = Magnet
+ma06 = Defense
+
+at14 = Take this
+at11 = It's over
+at16 = This is it
+at06, at09, 
+co01 = Goofy
+co02 = Donald

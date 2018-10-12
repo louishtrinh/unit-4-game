@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- ResetStyle -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- ResetStyle -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Bootstrap -->
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!-- FontAwesome -->
+
+    <!-- MainCSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- MainCSS -->
+
+</head>
+
+<body>
+    <div id="container-fluid">
+
+        <!-- Game Title -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center" style="font-size: 70px;">
+                    <strong>Warriors Of Light</strong>
+                </h1>
+            </div>
+        </div>
+
+
+        <!-- Introduction -->
+        <div class="row">
+            <div class="col-8">
+                <!-- Blank col to push Story to the Right -->
+            </div>
+            <div class="col-4">
+                <h3 class="fas fa-book-open"> The Story so far: Being
+                    obsessed with the power of darkness, Xehanort seeks to fill this world with death and destruction.</h3>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Instruction and Hints -->
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                <!-- BS card -->
+                <div class="card text-white bg-secondary border-secondary mb-3 w-max">
+                    <!-- Head -->
+                    <div id="gameCard" class="card-header">
+                        <h2 class="fas fa-gamepad"> Instruction:
+                            <span id="pressToStart" style="font-size:22px">Select
+                                your Hero of Light and banish the minions of darkness.
+                            </span>
+                        </h2>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 w">
+                            <h2 class="fas fa-comment" style="font-size: 25px;"> Hint: - <span id="hintRotate" style="font-size:22px">If
+                                    this is your first time playing the game, pick Sora!
+                                </span>
+                            </h2>
+                            <footer class="blockquote-footer" style="color:black; font-size: 20px;">This game is base
+                                on Kingdom Hearts title from Square Enix.
+                                <span id="guessedWord">
+
+                                </span>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero selection -->
+        <div class="row mt-5">
+            <div class="col">
+                <!-- BS card -->
+                <div class="card">
+                    <!-- Head -->
+                    <div class="card-header">
+                        <h2>Champions of Light</h2>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body">
+
+
+                        <!-- Sora card -->
+                        <div class="card w-auto text-center float-left">
+                            <div class="card-header">
+                                Sora
+                            </div>
+                            <div class="card-body">
+
+                                <img src="https://www.gtsdistribution.com/images/SQE818917_l.jpg">
+                                <button type="button" class="btn btn-outline-secondary btn-lg" style="
+                                position: absolute;
+                                top: 85%;
+                                left: 40%;">Select
+                                    Hero</button>
+                            </div>
+                            <div id="soraStat" class="card-footer text-muted">
+                                ATK: 5 - MAG: 5 - HP: 200
+                            </div>
+                        </div>
+
+                        <!-- Donald card -->
+                        <div class="card w-auto text-center float-left">
+                            <div class="card-header">
+                                Donald
+                            </div>
+                            <div class="card-body">
+
+                                <img src="https://pbs.twimg.com/media/Dfl_iqYXcAASnwX.jpg" style="width: 500px;
+                                height: 500px;">
+                                <button type="button" class="btn btn-outline-secondary btn-lg" style="
+                                position: absolute;
+                                top: 85%;
+                                left: 40%;">Select
+                                    Hero</button>
+                            </div>
+                            <div id="soraStat" class="card-footer text-muted">
+                                ATK: 2 - MAG: 8 - HP: 120
+                            </div>
+                        </div>
+
+                        <!-- Riku card -->
+                        <div class="card w-auto text-center float-left">
+                            <div class="card-header">
+                                Riku
+                            </div>
+                            <div class="card-body">
+
+                                <img src="https://images.khinsider.com/2018%20Uploads/02/Riku%20Bring%20Art.jpg" style="width: 500px;
+                                height: 500px;">
+                                <button type="button" class="btn btn-outline-secondary btn-lg" style="
+                                position: absolute;
+                                top: 85%;
+                                left: 40%;">Select
+                                    Hero</button>
+                            </div>
+                            <div id="soraStat" class="card-footer text-muted">
+                                ATK: 5 - MAG: 5 - HP: 200
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery -->
+
+    <!-- JScript -->
+    <script src="assets/javascript/game.js"></script>
+    <!-- JScript -->
+
+</body>
+
+</html>
