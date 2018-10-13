@@ -88,11 +88,11 @@
             </div>
         </div>
 
-        <!-- Hero selection -->
+        <!-- Hero list -->
         <div class="row mt-5">
             <div class="col">
                 <!-- BS card -->
-                <div class="card">
+                <div class="card w-75">
                     <!-- Head -->
                     <div class="card-header">
                         <h2>Champions of Light</h2>
@@ -100,68 +100,240 @@
 
                     <!-- Body -->
                     <div class="card-body">
+                        <div id="heroList" class="row">
 
-
-                        <!-- Sora card -->
-                        <div class="card w-auto text-center float-left">
-                            <div class="card-header">
-                                Sora
+                            <!-- Sora card -->
+                            <div id="soraCard" class="col order-1">
+                                <div class="card w-auto text-center float-left">
+                                    <div class="card-header">
+                                        Sora
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="https://www.gtsdistribution.com/images/SQE818917_l.jpg" style="width: 300px;
+                                height: 300px;">
+                                        <button id="selectSora" type="button" class="btn btn-outline-secondary btn-lg  heroSelectBtn"
+                                            style="position: absolute; width: 50%; top: 77%; left: 25%; opacity: 1; z-index: 1;">Select
+                                            Hero</button>
+                                        <button id="deSelectSora" type="button" class="btn btn-outline-secondary btn-lg  heroSelectBtn"
+                                            style="position: absolute; width: 50%; top: 77%; left: 25%; opacity: 1; z-index: 1;">De
+                                            Select
+                                            Hero</button>
+                                    </div>
+                                    <div id="stat" class="card-footer text-muted">
+                                        Level: <span id="level">1</span> - ATK: <span id="attack">8</span> - MAG:
+                                        <span id="magic">8</span>
+                                        - HP: <span id="hp">250</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
 
-                                <img src="https://www.gtsdistribution.com/images/SQE818917_l.jpg">
-                                <button type="button" class="btn btn-outline-secondary btn-lg" style="
-                                position: absolute;
-                                top: 85%;
-                                left: 40%;">Select
-                                    Hero</button>
+
+                            <!-- Donald card -->
+                            <div id="donaldCard" class="col order-2">
+                                <div class="card w-auto text-center float-left">
+                                    <div class="card-header">
+                                        Donald
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="https://pbs.twimg.com/media/Dfl_iqYXcAASnwX.jpg" style="width: 300px;
+                                height: 300px;">
+
+                                        <button id="selectDonald" type="button" class="btn btn-outline-secondary btn-lg  heroSelectBtn"
+                                            style="position: absolute; width: 50%; top: 77%; left: 25%; opacity: 1; z-index: 1;">Select
+                                            Hero</button>
+                                        <button id="deSelectDonald" type="button" class="btn btn-outline-secondary btn-lg  heroSelectBtn"
+                                            style="position: absolute; width: 50%; top: 77%; left: 25%; opacity: 1; z-index: 1;">De
+                                            Select
+                                            Hero</button>
+
+                                    </div>
+                                    <div id="stat" class="card-footer text-muted">
+                                        Level: <span id="level">1</span> - ATK: <span id="attack">2</span> - MAG: <span
+                                            id="magic">12</span>
+                                        - HP: <span id="hp">150</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="soraStat" class="card-footer text-muted">
-                                ATK: 5 - MAG: 5 - HP: 200
+
+
+                            <!-- Riku card -->
+                            <div id="rikuCard" class="col order-3">
+                                <div class="card w-auto text-center float-left">
+                                    <div class="card-header">
+                                        Riku
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="https://images.khinsider.com/2018%20Uploads/02/Riku%20Bring%20Art.jpg"
+                                            style="width: 300px;
+                                height: 300px;">
+
+
+                                        <button id="selectRiku" type="button" class="btn btn-outline-secondary btn-lg  heroSelectBtn"
+                                            style="position: absolute; width: 50%; top: 77%; left: 25%; opacity: 1; z-index: 1;">Select
+                                            Hero</button>
+                                        <button id="deSelectRiku" type="button" class="btn btn-outline-secondary btn-lg  heroSelectBtn"
+                                            style="position: absolute; width: 50%; top: 77%; left: 25%; opacity: 1; z-index: 1;">De
+                                            Select
+                                            Hero</button>
+
+                                    </div>
+                                    <div id="stat" class="card-footer text-muted">
+                                        Level: <span id="level">1</span> - ATK: <span id="attack">15</span> - MAG:
+                                        <span id="magic">2</span>
+                                        - HP: <span id="hp">200</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hidden card -->
+                            <div id="hiddenHeroCard" style="display: none">
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Monster list -->
+        <div class="row mt-5">
+            <div class="col">
+                <!-- BS card -->
+                <div class="card w-75">
+                    <!-- Head -->
+                    <div class="card-header">
+                        <h2>Minions of Darkness</h2>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body">
+                        <div id="monsterList" class="row">
+
+                            <!-- Phantom card -->
+                            <div id="phantomCard" class="col order-5">
+                                <div class="card w-auto text-center float-left">
+                                    <div class="card-header">
+                                        Phantom
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="https://www.primagames.com/media/files/kingdom-hearts-hd-15-remix-eguide/final_mix/phantom.jpg/PRIMAP/resize/618x/quality/80"
+                                            style="width: 300px;
+                                height: 300px;">
+
+                                        <button id="selectPhantom" type="button" class="btn btn-outline-secondary btn-lg  monsterSelectBtn"
+                                            style="position: absolute; width: 50%; top: 77%; left: 25%; opacity: 1; z-index: 1;">Select
+                                            Monster</button>
+                                        <button id="deSelectPhantom" type="button" class="btn btn-outline-secondary btn-lg  monsterSelectBtn"
+                                            style="position: absolute; width: 56%; top: 77%; left: 22%; opacity: 1; z-index: 1;">De
+                                            Select
+                                            Monster</button>
+
+                                    </div>
+                                    <div id="stat" class="card-footer text-muted">
+                                        Level: <span id="level">1</span> - ATK: <span id="attack">5</span> - MAG: <span
+                                            id="magic">5</span>
+                                        - HP: <span id="hp">200</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <!-- Hidden card -->
+                            <div id="hiddenMonsterCard" style="display: none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Fight Arena -->
+        <div class="row mt-5">
+            <div class="col">
+                <!-- BS card -->
+                <div class="card  w-50">
+                    <!-- Head -->
+                    <div class="card-header text-center">
+                        <h2>Light versus Dark</h2>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body">
+                        <div id="fightArena" class="row">
+
+                            <!-- Hero card -->
+
+                            <div id="heroCard" class="col order-4">
+                                <div class="card w-auto text-center float-left">
+                                    <div class="card-header">
+                                        Please select Hero </div>
+                                    <div class="card-body">
+                                        <img src="https://dummyimage.com/300x300/ffffff/ffffff" style="width: 300px;
+                                height: 300px;">
+                                    </div>
+                                    <div id="stat" class="card-footer text-muted">
+                                        Level: <span id="level"></span> - ATK: <span id="attack"></span> - MAG:
+                                        <span id="magic"></span>
+                                        - HP: <span id="hp"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Monster card -->
+
+                            <div id="monsterCard" class="col order-8">
+                                <div class="card w-auto text-center float-left">
+                                    <div class="card-header">
+                                        Please select enemy </div>
+                                    <div class="card-body">
+                                        <img src="https://dummyimage.com/300x300/ffffff/ffffff" style="width: 300px;
+                                height: 300px;">
+                                    </div>
+                                    <div id="stat" class="card-footer text-muted">
+                                        Level: <span id="level"></span> - ATK: <span id="attack"></span> - MAG:
+                                        <span id="magic"></span>
+                                        - HP: <span id="hp"></span>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Donald card -->
-                        <div class="card w-auto text-center float-left">
-                            <div class="card-header">
-                                Donald
-                            </div>
-                            <div class="card-body">
+                        <!-- Control -->
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <!-- Basic button -->
+                                <h2><span class="badge badge-secondary fas fa-torah"> Basic</span></h2>
+                                <button type="button" id="atkBtn" class="btn btn-outline-secondary btn-lg">Attack</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Guard</button>
 
-                                <img src="https://pbs.twimg.com/media/Dfl_iqYXcAASnwX.jpg" style="width: 500px;
-                                height: 500px;">
-                                <button type="button" class="btn btn-outline-secondary btn-lg" style="
-                                position: absolute;
-                                top: 85%;
-                                left: 40%;">Select
-                                    Hero</button>
+                                <!-- Magic button -->
+                                <h2><span class="badge badge-secondary fas fa-magic mt-3"> Magic</span></h2>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Fire</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Ice</button>
                             </div>
-                            <div id="soraStat" class="card-footer text-muted">
-                                ATK: 2 - MAG: 8 - HP: 120
+                            <div class="col-8 border-top border-left">
+                                <!-- Logs Tracking -->
+                                <h2><span class="badge badge-secondary fas fa-history"> Combat Logs</span></h2>
+
+                                <!-- Logs go here -->
+                                <div id="logs" class="text-left">
+                                    <div>Select Attack to initiate battle!</div>
+                                </div>
                             </div>
                         </div>
-
-                        <!-- Riku card -->
-                        <div class="card w-auto text-center float-left">
-                            <div class="card-header">
-                                Riku
-                            </div>
-                            <div class="card-body">
-
-                                <img src="https://images.khinsider.com/2018%20Uploads/02/Riku%20Bring%20Art.jpg" style="width: 500px;
-                                height: 500px;">
-                                <button type="button" class="btn btn-outline-secondary btn-lg" style="
-                                position: absolute;
-                                top: 85%;
-                                left: 40%;">Select
-                                    Hero</button>
-                            </div>
-                            <div id="soraStat" class="card-footer text-muted">
-                                ATK: 5 - MAG: 5 - HP: 200
-                            </div>
-                        </div>
-
-
 
                     </div>
                 </div>
