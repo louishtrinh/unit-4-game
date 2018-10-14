@@ -304,7 +304,7 @@ warriorOfLight = {
         "<div>" +
           $("#logs div").length +
           ". " +
-          "All enemies banished, thanks to you this world is safe from Darkness!" +
+          "All enemies banished. Thanks to you, this world is safe from Darkness!" +
           "</div>"
       );
       var changeCardHeader = $("#monsterCard #cardHeader");
