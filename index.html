@@ -21,6 +21,11 @@
         crossorigin="anonymous">
     <!-- FontAwesome -->
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Marck+Script|Srisakdi:700|Vidaloka|PT+Serif+Caption"
+        rel="stylesheet">
+    <!-- Google Font -->
+
     <!-- MainCSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- MainCSS -->
@@ -28,71 +33,100 @@
 </head>
 
 <body>
-    <div id="container-fluid">
+    <audio id="audio" autoplay loop="true" controls>
+        <source src="./assets/sfx/Twilight Town Combat.mp3">
+        <source src="./assets/sfx/Simple and Clean - Ray of Hope Remix.mp3">
+    </audio>
 
-        <!-- Game Title -->
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center" style="font-size: 70px;">
-                    <strong>Warriors Of Light</strong>
-                </h1>
+
+
+
+
+
+
+
+    <div class="container-fluid">
+
+        <div class="jumbotron">
+            <!-- Game Title -->
+            <div class="row mb-5">
+                <div class="col-10">
+                    <h1 class="text-center">
+                        <strong>Warriors Of Light</strong>
+                    </h1>
+                </div>
+                <div class="col-10">
+                    <h2 class="text-center">
+                        Battle of Twilight Town
+                    </h2>
+                </div>
             </div>
-        </div>
 
-
-        <!-- Introduction -->
-        <div class="row">
-            <div class="col-8">
-                <!-- Blank col to push Story to the Right -->
-            </div>
-            <div class="col-4">
+            <!-- Introduction -->
+            <div class="row mt-5">
+                <div class="col-8">
+                    <!-- Blank col to push Story to the Right -->
+                </div>
+                <!--             <div class="col-4">
                 <h3 class="fas fa-book-open"> The Story so far: Being
                     obsessed with the power of darkness, Xehanort seeks to fill this world with death and destruction.</h3>
+            </div> -->
             </div>
-        </div>
 
+            <!-- Instruction and Hints -->
+            <div class="row mt-5">
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <!-- BS card -->
+                    <div class="card text-white border-secondary mb-3 w-max " style="background: rgba(100, 100, 100, .6);">
+                        <!-- Head -->
+                        <div class="card-header">
+                            <h3 class="fas fa-book-open"> The Story so far: <span style="font-size:22px">Being
+                                    obsessed and corrupted by the power of darkness. Xehanort is marching his army of
+                                    death to every corners of every worlds. You have been assigned to protect Twilight
+                                    Town. Protect it, even at the cost of your life.</span></h3>
+                        </div>
 
+                        <div class="card-header">
 
-
-
-        <!-- Instruction and Hints -->
-        <div class="row mt-5">
-            <div class="col-sm-12 col-md-8 col-lg-6">
-                <!-- BS card -->
-                <div class="card text-white bg-secondary border-secondary mb-3 w-max">
-                    <!-- Head -->
-                    <div id="gameCard" class="card-header">
-                        <h2 class="fas fa-gamepad"> Instruction:
-                            <span id="pressToStart" style="font-size:22px">Select
-                                your Hero of Light and banish the minions of darkness.
-                            </span>
-                        </h2>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0 w">
-                            <h2 class="fas fa-comment" style="font-size: 25px;"> Hint: - <span id="hintRotate" style="font-size:22px">If
-                                    this is your first time playing the game, pick Sora!
+                            <h3 class="fas fa-gamepad"> Instruction:
+                                <span style="font-size:22px">Select
+                                    your Hero of Light and banish the minions of darkness.
                                 </span>
-                            </h2>
-                            <footer class="blockquote-footer" style="color:black; font-size: 20px;">This game is base
-                                on Kingdom Hearts title from Square Enix.
-                                <span id="guessedWord">
+                            </h3>
 
-                                </span>
-                            </footer>
-                        </blockquote>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0 w">
+                                <h3 class="fas fa-comment" style="font-size: 25px;"> Hint: - <span id="hintRotate"
+                                        style="font-size:22px">If
+                                        this is your first time playing the game, pick Sora! Don't forget to use magic!
+                                    </span>
+                                </h3>
+                                <footer class="blockquote-footer" style="color:black; font-size: 20px;">This game is
+                                    base
+                                    on Kingdom Hearts title from Square Enix.
+                                    <span id="guessedWord">
+
+                                    </span>
+                                </footer>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
+
+
+
         <!-- Hero list -->
         <div class="row mt-5">
             <div class="col">
                 <!-- BS card -->
-                <div class="card w-75">
+                <div class="card w-75" style="background: rgba(255, 255, 255, 0.85);">
                     <!-- Head -->
                     <div class="card-header">
                         <h2>Champions of Light</h2>
@@ -120,9 +154,9 @@
                                             Hero</button>
                                     </div>
                                     <div id="stat" class="card-footer text-muted">
-                                        Level: <span id="level">1</span> - ATK: <span id="attack">8</span> - MAG:
-                                        <span id="magic">8</span>
-                                        - HP: <span id="hp">250</span>
+                                        Level: <span id="level">1</span> - ATK: <span id="attack">15</span> - MAG:
+                                        <span id="magic">15</span>
+                                        - HP: <span id="hp">350</span>
                                     </div>
                                 </div>
                             </div>
@@ -148,8 +182,8 @@
 
                                     </div>
                                     <div id="stat" class="card-footer text-muted">
-                                        Level: <span id="level">1</span> - ATK: <span id="attack">2</span> - MAG: <span
-                                            id="magic">12</span>
+                                        Level: <span id="level">1</span> - ATK: <span id="attack">4</span> - MAG: <span
+                                            id="magic">20</span>
                                         - HP: <span id="hp">150</span>
                                     </div>
                                 </div>
@@ -178,7 +212,7 @@
 
                                     </div>
                                     <div id="stat" class="card-footer text-muted">
-                                        Level: <span id="level">1</span> - ATK: <span id="attack">15</span> - MAG:
+                                        Level: <span id="level">1</span> - ATK: <span id="attack">25</span> - MAG:
                                         <span id="magic">2</span>
                                         - HP: <span id="hp">200</span>
                                     </div>
@@ -207,7 +241,7 @@
         <div class="row mt-5">
             <div class="col">
                 <!-- BS card -->
-                <div class="card w-75">
+                <div class="card w-75" style="background: rgba(255, 255, 255, 0.85);">
                     <!-- Head -->
                     <div class="card-header">
                         <h2>Minions of Darkness</h2>
@@ -266,8 +300,8 @@
 
                                     </div>
                                     <div id="stat" class="card-footer text-muted">
-                                        Level: <span id="level">5</span> - ATK: <span id="attack">20</span> - MAG: <span
-                                            id="magic">0</span>
+                                        Level: <span id="level">5</span> - ATK: <span id="attack">20</span> - MAG:
+                                        <span id="magic">0</span>
                                         - HP: <span id="hp">380</span>
                                     </div>
                                 </div>
@@ -295,9 +329,9 @@
 
                                     </div>
                                     <div id="stat" class="card-footer text-muted">
-                                        Level: <span id="level">10</span> - ATK: <span id="attack">60</span> - MAG: <span
-                                            id="magic">0</span>
-                                        - HP: <span id="hp">500</span>
+                                        Level: <span id="level">10</span> - ATK: <span id="attack">60</span> - MAG:
+                                        <span id="magic">0</span>
+                                        - HP: <span id="hp">800</span>
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +354,7 @@
         <div class="row mt-5">
             <div class="col">
                 <!-- BS card -->
-                <div class="card  w-50">
+                <div class="card  w-50" style="background: rgba(255, 255, 255, 0.85);">
                     <!-- Head -->
                     <div class="card-header text-center">
                         <h2>Light versus Dark</h2>
@@ -335,7 +369,7 @@
                             <div id="heroCard" class="col order-4">
                                 <div class="card w-auto text-center float-left">
                                     <div class="card-header">
-                                        Please select Hero </div>
+                                        <span id="cardHeader">Please select Hero</span> </div>
                                     <div class="card-body">
                                         <img src="https://dummyimage.com/300x300/ffffff/ffffff" style="width: 300px;
                                 height: 300px;">
@@ -353,7 +387,7 @@
                             <div id="monsterCard" class="col order-12">
                                 <div class="card w-auto text-center float-left">
                                     <div class="card-header">
-                                        Please select enemy </div>
+                                        <span id="cardHeader">Please select enemy</span> </div>
                                     <div class="card-body">
                                         <img src="https://dummyimage.com/300x300/ffffff/ffffff" style="width: 300px;
                                 height: 300px;">
@@ -374,12 +408,12 @@
                                 <!-- Basic button -->
                                 <h2><span class="badge badge-secondary fas fa-torah"> Basic</span></h2>
                                 <button type="button" id="atkBtn" class="btn btn-outline-secondary btn-lg">Attack</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg">Guard</button>
+                                <button type="button" id="grdBtn" class="btn btn-outline-secondary btn-lg">Guard</button>
 
                                 <!-- Magic button -->
                                 <h2><span class="badge badge-secondary fas fa-magic mt-3"> Magic</span></h2>
-                                <button type="button" class="btn btn-outline-secondary btn-lg">Fire</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg">Ice</button>
+                                <button type="button" id="fireBtn" class="btn btn-outline-secondary btn-lg">Fire</button>
+                                <button type="button" id="iceBtn" class="btn btn-outline-secondary btn-lg">Ice</button>
                             </div>
                             <div class="col-8 border-top border-left">
                                 <!-- Logs Tracking -->
@@ -397,6 +431,27 @@
             </div>
         </div>
 
+        <footer class="footer bg-secondary mt-5" style="color:white;background-color: black">
+
+            <div class="container">
+
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <div class="mb-1 fas fa-bug" style="font-size:22px;"> See a bug?</div>
+                    </li>
+                    <li class="list-inline-item pt-2">
+                        <a href="mailto:Louis.H.Trinh@gmail.com" style="font-size:22px;color: white;">Email Me</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="text-center pb-3" style="font-size:20px;">© 2018 Copyright:
+                <a href="https://louishtrinh.github.io/Responsive-Portfolio/" style="font-size:22px;color: white;">Louis
+                    Trinh</a>
+            </div>
+
+        </footer>
 
     </div>
 

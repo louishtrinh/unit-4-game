@@ -1,17 +1,48 @@
+h2 {
+  font-family: 'Vidaloka', serif;
+}
+
 #logs {
-    width: 100%;
-    height: 200px;
-    font-size: 22px;
-    /* Positioning */
-    margin-top: 20px;
-  
-    /* Box-model */
-    overflow: auto;
-  
-    /* Typography */
-    text-align: center;
-  
-    /* Visual */
-    background: white;
-  }
-  
+  width: 100%;
+  height: 200px;
+  font-size: 22px;
+  /* Positioning */
+  margin-top: 20px;
+  /* Box-model */
+  overflow: auto;
+  /* Typography */
+  text-align: center;
+  /* Visual */
+  background: white;
+}
+
+.container-fluid {
+  background-image: url("https://www.kingdomhearts.com/img/components/kingdom-hearts-iii-argyle.jpg");
+}
+
+.jumbotron {
+  background-image: url("https://pbs.twimg.com/media/DnYpW4HW0AIH54Z.jpg");
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  font-family: 'Srisakdi', cursive;
+  font-weight: bold;
+  font-size: 80px;
+
+}
+
+.jumbotron h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+}
+
+.card-body {
+  font-size: 20px;
+}
+
+.card-header {
+  font-size: 30px;
+  font-family: 'PT Serif Caption', serif;
+
+}
