@@ -1,3 +1,5 @@
+ex09 = Let's go
+
 ex08 = Light
 ma01 = Fire
 ma02 = Freeze
@@ -10,5 +12,7 @@ at14 = Take this
 at11 = It's over
 at16 = This is it
 at06, at09, 
+
+
 co01 = Goofy
 co02 = Donald
